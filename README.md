@@ -40,6 +40,8 @@ This project was completed under the guidance of my academic supervisor:
 ---
 
 ## 📸 Preview
+![Calculator Preview](img/light-mode.png) 
+![Calculator Preview](#) 
 ![Calculator Preview](#)  
 
 ---
