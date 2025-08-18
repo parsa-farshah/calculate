@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="src/styles/output.css" />
+  </head>
+
+  <body class="overflow-hidden relative">
+    <main
+      class="w-full h-[100vh] lightBg overflow-hidden flex justify-center items-center relative transition duration-[.4s] ease-in-out"
+    >
+      <span
+        data-mode="light"
+        id="mode"
+        class="lightBtn w-[80px] h-[40px] absolute z-[12] top-[20px] left-[20px] rounded-[20px] transition ease-in-out cursor-pointer flex justify-between items-center px-[6px] before:content-[''] before:w-[35px] before:h-[35px] before:rounded-[50%] before:bg-[#2D378D] before:absolute before:z-[-1] before:left-[50%] before:top-[50%] before:translate-y-[-50%] before:transition before:duration-[.4s] before:ease-in-out"
+      >
+        <img
+          class="w-[30] h-[30px]"
+          src="src/img/icons8-light-mode-78.png"
+          alt="light"
+        />
+        <img
+          class="w-[30] h-[30px]"
+          src="src/img/icons8-dark-mode-48.png"
+          alt="dark"
+        />
+      </span>
+      <div
+        class="bubbles absolute bottom-[-120px] flex flex-wrap mt-[70px] w-full justify-around"
+      >
+        <span class="one bubble"></span>
+        <span class="two bubble"></span>
+        <span class="three bubble"></span>
+        <span class="four bubble"></span>
+        <span class="five bubble"></span>
+        <span class="six bubble"></span>
+        <span class="seven bubble"></span>
+      </div>
+      <div
+        class="z-12 p-[15px] w-[420px] rounded-[12px] bg-[rgba(255,255,255,0.1)] shadow-[0 20px 50px] shadow-[rgba(0,0,0,0.15)] border-t border-l border-[rgba(255,255,255,0.5)]"
+      >
+        <form id="calculator" action="#" name="forms">
+          <input
+            id="txt"
+            class="txt"
+            type="text"
+            name="answer"
+            placeholder="0"
+            value=""
+          />
+          <div class="">
+            <input class="btn" type="button" value="AC" />
+            <input class="btn" type="button" value="DEL" />
+            <input class="btn" type="button" value="%" />
+            <input class="btn" type="button" value="/" />
+          </div>
+          <div>
+            <input class="btn" type="button" value="7" />
+            <input class="btn" type="button" value="8" />
+            <input class="btn" type="button" value="9" />
+            <input class="btn" type="button" value="*" />
+          </div>
+          <div>
+            <input class="btn" type="button" value="4" />
+            <input class="btn" type="button" value="5" />
+            <input class="btn" type="button" value="6" />
+            <input class="btn" type="button" value="-" />
+          </div>
+          <div>
+            <input class="btn" type="button" value="1" />
+            <input class="btn" type="button" value="2" />
+            <input class="btn" type="button" value="3" />
+            <input class="btn" type="button" value="+" />
+          </div>
+          <div>
+            <input class="btn" type="button" value="0" />
+            <input class="btn" type="button" value="00" />
+            <input class="btn" type="button" value="." />
+            <input class="btn" type="button" value="=" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- team -->
+    <div
+      id="team"
+      class="absolute top-5 right-7 bg-white p-2 w-fit h-fit rounded-2xl cursor-pointer"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#777777"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+        />
+      </svg>
+    </div>
+    <!-- team pictures -->
+    <div
+      id="teamSection"
+      class="absolute top-0 translate-x-[100%] duration-500 bg-[#c5c5c500] backdrop-blur-3xl w-full h-full flex items-center justify-center gap-4 lg:gap-40 z-50"
+    >
+      <!-- image parsa -->
+      <div
+        class="w-[45%] sm:w-[300px] bg-[#9c28b1] rounded-4xl overflow-hidden pb-5"
+      >
+        <figure class="w-full h-[250px] rounded-b-3xl overflow-hidden">
+          <img
+            class="w-full h-full object-cover object-top"
+            src="src/img/parsa.png"
+            alt=""
+          />
+        </figure>
+        <h1 class="cinzel text-white font-black text-center mt-3">
+          Parsa Dehghan Pour Farashah
+        </h1>
+        <span
+          class="cinzel text-white font-black text-center flex justify-center w-full"
+          >my social :</span
+        >
+        <div class="flex justify-around mt-5">
+          <a href="https://www.github.com/parsa-farshah">
+            <img
+              class="w-[30px] h-[30px] hover:opacity-60 duration-500"
+              src="src/img/icons8-github-50.png"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
+          >
+            <img
+              class="w-[30px] h-[30px] hover:opacity-60 duration-500"
+              src="src/img/icons8-instagram-50.png"
+              alt=""
+            /> </a
+          ><a
+            href="https://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250  "
+          >
+            <img
+              class="w-[30px] h-[30px] hover:opacity-60 duration-500"
+              src="src/img/icons8-linkedin-50.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- image mehrab -->
+
+      <div
+        class="w-[45%] sm:w-[300px] bg-[#9c28b1] rounded-4xl overflow-hidden pb-5"
+      >
+        <figure class="w-full h-[250px] rounded-b-3xl overflow-hidden">
+          <img
+            class="w-full h-full object-cover object-top"
+            src="src/img/mehrab.png"
+            alt=""
+          />
+        </figure>
+        <h1 class="cinzel text-white font-black text-center mt-3">
+          Mehrab Pourzakaria
+        </h1>
+        <span
+          class="cinzel text-white font-black text-center flex justify-center w-full"
+          >my social :</span
+        >
+        <div class="flex justify-around mt-5">
+          <a href="https://www.github.com/parsa-farshah">
+            <img
+              class="w-[30px] h-[30px] hover:opacity-60 duration-500"
+              src="src/img/icons8-github-50.png"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
+          >
+            <img
+              class="w-[30px] h-[30px] hover:opacity-60 duration-500"
+              src="src/img/icons8-instagram-50.png"
+              alt=""
+            /> </a
+          ><a
+            href="https://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250  "
+          >
+            <img
+              class="w-[30px] h-[30px] hover:opacity-60 duration-500"
+              src="src/img/icons8-linkedin-50.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <!-- close-->
+      <div
+        id="close"
+        class="absolute top-5 right-7 bg-white p-2 w-fit h-fit rounded-2xl cursor-pointer group"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 group-hover:rotate-180 duration-700"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+  <script src="src/js/master.js"></script>
+</html>
+<!-- shadow-[0 20px 50px rgba(0,0,0,0.15)] -->
