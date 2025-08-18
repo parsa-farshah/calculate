@@ -48,7 +48,7 @@ This project was completed under the guidance of my academic supervisor:
 
 ## 🌐 Live Demo
 Check out the live version of this calculator:  
-👉 [View Demo](#)  
+👉 [View Demo](https://parsa-farshah.github.io/calculate/)  
 
 ---
 
